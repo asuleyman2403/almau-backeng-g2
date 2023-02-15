@@ -1,0 +1,26 @@
+@import url('./vendor/reset.css');
+@import url('./vendor/slick.css');
+@import url('./vendor/icomoon.css');
+@import url('./custom/slider.css');
+@import url('./custom/header.css');
+@import url('./custom/work.css');
+@import url('./custom/gallery.css');
+@import url('./custom/accomplishments.css');
+@import url('./custom/blog.css');
+@import url('./custom/pricing.css');
+@import url('./custom/reviews.css');
+@import url('./custom/footer.css');
+@import url('./custom/modal.css');
+body{
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+
+.cat {
+    width: 80%;
+    margin: 50px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+

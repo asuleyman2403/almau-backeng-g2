@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block headers %}
+    <title>About page</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Poppins:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'online_shop/style/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
+
+{% block content %}
+    <section class = "gallery">
+      <div class = "gallery-item item-1">
+          <div class = "gallery-hover">
+            <span class = "gallery-hover__text">Illustration</span>
+            <h3 class = "gallery-hover__main-text">Work Name</h3>
+          </div>
+      </div>
+      <div class = "gallery-item item-2">
+          <div class = "gallery-hover">
+            <span class = "gallery-hover__text">Illustration</span>
+            <h3 class = "gallery-hover__main-text">Work Name</h3>
+          </div>
+      </div>
+      <div class = "gallery-item item-3">
+          <div class = "gallery-hover">
+            <span class = "gallery-hover__text">Illustration</span>
+            <h3 class = "gallery-hover__main-text">Work Name</h3>
+          </div>
+      </div>
+      <div class = "gallery-item item-4">
+          <div class = "gallery-hover">
+            <span class = "gallery-hover__text">Illustration</span>
+            <h3 class = "gallery-hover__main-text">Work Name</h3>
+          </div>
+      </div>
+      <div class = "gallery-item item-5">
+          <div class = "gallery-hover">
+            <span class = "gallery-hover__text">Illustration</span>
+            <h3 class = "gallery-hover__main-text">Work Name</h3>
+          </div>
+      </div>
+      <div class = "gallery-item item-6">
+          <div class = "gallery-hover">
+            <span class = "gallery-hover__text">Illustration</span>
+            <h3 class = "gallery-hover__main-text">Work Name</h3>
+          </div>
+      </div>
+    </section>
+    <section class = "accomplishments">
+        <h1 class="main_text">My Accomplishment</h1>
+        <div class="acc-items">
+          <div class="acc-item">
+              <i class="acc-icon icon-paperplane"></i>
+              <h2 class="acc-count">0</h2>
+              <h3 class="description">Projects</h3>
+          </div>
+          <div class="acc-item">
+            <i class="acc-icon icon-cup"></i>
+            <h2 class="acc-count">0</h2>
+            <h3 class="description">Cups of coffee</h3>
+          </div>
+          <div class="acc-item">
+            <i class="acc-icon icon-user2"></i>
+            <h2 class="acc-count">0</h2>
+            <h3 class="description">Satisfied Clients</h3>
+          </div>
+        </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-top-left">
+          <input type="text" class="footer-top-left__email" placeholder="Enter your email">
+          <button class="footer-top-left__submit" type = "submit">SUBSCRIBE</button>
+        </div>
+        <div class="footer-top-right">
+          SUBSCRIBE TO UPDATE FOR OUR NEWSLETTER
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="footer-main-inform">
+            <h3 class="footer-main-inform__title">About Landing</h3>
+            <p class="footer-main-inform__description">Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+            <div class="footer-main-social">
+              <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-twitter"></i></a>
+              <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-facebook"></i></a>
+              <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-linkedin"></i></a>
+              <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-dribbble"></i></a>
+            </div>
+          </div>
+        <div class="footer-main-inform">
+          <h3 class="footer-main-inform__title">Information</h3>
+          <ul class="footer-main__information">
+            <li class="footer-main__inform__link">
+              <i class="icon-check footer-main__second-icon"></i>
+              <span class="footer-main__second-desc">About</span>
+            </li>
+            <li class="footer-main__inform__link">
+              <i class="icon-check footer-main__second-icon"></i>
+              <span class="footer-main__second-desc">Privacy</span>
+            </li>
+            <li class="footer-main__inform__link">
+              <i class="icon-check footer-main__second-icon"></i>
+              <span class="footer-main__second-desc">Terms & Condition</span>
+            </li>
+            <li class="footer-main__inform__link">
+              <i class="icon-check footer-main__second-icon"></i>
+              <span class="footer-main__second-desc">Contact</span>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-main-inform">
+          <h3 class="footer-main-inform__title">Recent Blog</h3>
+          <div class="footer-main-inform-blogs">
+            <div class="footer-main-blog">
+              <a href="#" class="footer-main-blog-img footer-blog-1"></a>
+              <div class="footer-main-blog-description">
+                <h3 class="footer-blog-description__title">Become a Creative</h3>
+                <h4 class="footer-blog-description__date">20 March 2019</h4>
+              </div>
+            </div>
+            <div class="footer-main-blog">
+              <a href="#" class="footer-main-blog-img footer-blog-2"></a>
+              <div class="footer-main-blog-description">
+                <h3 class="footer-blog-description__title">Become a Creative</h3>
+                <h4 class="footer-blog-description__date">20 March 2019</h4>
+              </div>
+            </div>
+            <div class="footer-main-blog">
+              <a href="#" class="footer-main-blog-img footer-blog-3"></a>
+              <div class="footer-main-blog-description">
+                <h3 class="footer-blog-description__title">Become a Creative</h3>
+                <h4 class="footer-blog-description__date">20 March 2019</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-main-inform">
+          <h3 class="footer-main-inform__title">Contact Info</h3>
+          <p class="footer-main-inform__address">
+            291 South 21th Street,
+            Suite 721 New York NY 10016
+          </p>
+          <ul class="footer-inform__contacts">
+            <li class="footer-inform__contact">
+              <i class="footer-inform__third-icon icon-phone"></i>
+              <span class="footer-inform__third-desc">+ 1235 2355  98</span>
+            </li>
+            <li class="footer-inform__contact">
+              <i class="footer-inform__third-icon icon-envelope"></i>
+              <span class="footer-inform__third-desc">info@yoursite.com</span>
+            </li>
+            <li class="footer-inform__contact">
+              <i class="footer-inform__third-icon icon-location4"></i>
+              <span class="footer-inform__third-desc">yourwebsite.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+          <h3 class="footer-bottom__copyright">Copyright ©2019 All rights reserved | This template is made with <i class = "icon-heart3"></i> by <span class="gray">Colorlib</span> </h3>
+          <h3 class="footer-bottom__images">Demo Images: <span class="gray">Unsplash, Pexels</span></h3>
+      </div>
+    </footer>
+    <div class="modal" id = "modal" onclick="hideModal(event)">
+        <div class="modal__main-content">
+          <div class="modal__exit" id = "exit" onclick="hideModal(event)">X</div>
+          <div class="modal__content">
+            <h1 class="modal-content__title">Registration Form</h1>
+            <div class="modal-content__field">
+              <h2 class="modal-content-field__name">Email: </h2>
+              <input type="text" class="modal-content__email" placeholder="Enter your email here...">
+            </div>
+            <div class="modal-content__field">
+              <h2 class="modal-content-field__name">Password:</h2>
+              <input type="password" class="modal-content__password" placeholder="Create a password">
+            </div>
+            <div class="modal-content__field">
+              <h2 class="modal-content-field__name">Password(again):</h2>
+              <input type="password" class="modal-content__password" placeholder="Repeat your password">
+            </div>
+            <button type="submit" class="modal-content__submit">Sign Up</button>
+          </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+      var DJANGO_STATIC_URL = '{{ STATIC_URL }}';
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="{% static 'online_shop/script/slick.min.js' %}"></script>
+    <script src = "{% static 'online_shop/script/script.js' %}"></script>
+    <script type = "text/javascript" src = "{% static 'online_shop/script/gallery-hover.js' %}"></script>
+    <script src = "{% static 'online_shop/script/acc.js' %}"></script>
+    <script src = "{% static 'online_shop/script/modal.js' %}"></script>
+    <script src = "{% static 'online_shop/script/mobile.js' %}"></script>
+
+{% endblock %}
