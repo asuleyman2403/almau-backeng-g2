@@ -29,7 +29,7 @@ def get_category(pk):
             'category': category,
             'status': 200
         }
-    except Category.DoesNotExist as e:
+    except Category.DoesNotExist:
         return {
             'category': None,
             'status': 404
@@ -39,21 +39,23 @@ def get_category(pk):
 def get_product(pk):
     try:
         product = Product.objects.get(id=pk)
-        return {
-            'product': product,
-            'status': 200
-        }
+        return product
+        # return {
+        #     'product': product,
+        #     'status': 200
+        # }
     except Product.DoesNotExist as e:
-        return {
-            'product': None,
-            'status': 404
-        }
+        return None
+        # return {
+        #     'product': None,
+        #     'status': 404
+        # }
 
 @csrf_exempt
 def handle_category(request, pk):
-    result = get_category(pk)
+    category = get_category(pk)
 
-    if result['status'] == 404:
+    if category is None:
         return JsonResponse({'message': 'Category not found'}, status=404, safe=False)
 
     category = result['category']
@@ -94,7 +96,8 @@ def handle_category_products(request, pk):
         if serializer.is_valid():
             serializer.save()
             return JsonResponse(data=serializer.data, safe=False)
-        return JsonResponse(data=serializer.errors, safe=False)
+        else:
+            return JsonResponse(data=serializer.errors, safe=False)
     return JsonResponse({'message': 'Request is not supported'}, status=400, safe=False)
 
 @csrf_exempt

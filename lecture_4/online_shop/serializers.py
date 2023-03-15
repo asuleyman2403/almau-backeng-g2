@@ -1,17 +1,24 @@
 from rest_framework import serializers
 from online_shop.models import Category, Product
 
+user = {
+    'name': 'Name',
+    'surname': 'Surname',
+    'password': 'Test1234'
+}
+
+
 class CategorySerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     name = serializers.CharField(allow_null=False, allow_blank=False, min_length=10, max_length=255)
     description = serializers.CharField(allow_null=True, allow_blank=True)
 
-    def create(self, validated_data):
+    def create(self, validated_data): # POST
         category = Category(**validated_data)
         category.save()
         return category
 
-    def update(self, instance, validated_data):
+    def update(self, instance, validated_data): # PUT
         instance.name = validated_data.get('name', instance.name)
         instance.description = validated_data.get('description', instance.description)
         instance.save()
