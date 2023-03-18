@@ -14,8 +14,6 @@ def list_create_blog(request):
         return Response(serializer.data, status=status.HTTP_200_OK)
     if request.method == 'POST':
         data = request.data
-        data['created_at'] = datetime.now()
-        data['updated_at'] = datetime.now()
         serializer = BlogSerializer(data=data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
